@@ -1,0 +1,265 @@
+
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #747474;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+header img {
+    width: 250px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #747474;
+    margin-left: 20px;
+}
+
+nav a:first-child {
+    color: #00b39b;
+}
+
+/* Introduction */
+.intro {
+    text-align: center;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.intro img {
+    width: 40px;
+}
+
+.intro h1 {
+    color: #00b39b;
+    font-size: 32px;
+}
+
+.paragraphs {
+    display: flex;
+    gap: 30px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Services */
+.services {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+
+.card {
+    flex: 1;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    min-height: 280px;
+}
+
+.card h2 {
+    font-size: 25px;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+.card select {
+    margin-top: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.patients {
+    background-color: #00ccb1;
+}
+
+.doctors {
+    background-color: #3d83df;
+}
+
+.clinics {
+    background-color: #1b2734;
+}
+
+/* Brands */
+.brands {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 80px auto;
+}
+
+.brands h2 {
+    color: #00b39b;
+    width: 30%;
+}
+
+.brand-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 70%;
+}
+
+.brand-list span {
+    font-size: 18px;
+    color: #747474;
+}
+
+/* Statistics */
+.statistics {
+    background-color: #e5faf8;
+    padding: 50px 10%;
+    display: flex;
+    gap: 40px;
+}
+
+.statistics-intro {
+    flex: 1;
+}
+
+.statistics-intro h2 {
+    color: #00b39b;
+    font-size: 30px;
+}
+
+.statistics-cards {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.stat-card {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    color: #00b39b;
+    font-size: 20px;
+}
+
+.stat-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Offices */
+.offices {
+    max-width: 1000px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.offices h2 {
+    color: #00b39b;
+    font-size: 30px;
+}
+
+.offices p {
+    line-height: 1.6;
+}
+
+.office-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.office {
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.office a,
+.join a {
+    background-color: #3d83df;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Join us */
+.join {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.join h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #eee;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    header,
+    .paragraphs,
+    .services,
+    .brands,
+    .statistics {
+        flex-direction: column;
+    }
+
+    header {
+        gap: 20px;
+    }
+
+    .services {
+        margin: 30px 15px;
+    }
+
+    .brands {
+        margin: 40px 20px;
+    }
+
+    .brands h2,
+    .brand-list {
+        width: 100%;
+    }
+
+    .statistics {
+        padding: 30px 15px;
+    }
+
+    .office-list {
+        grid-template-columns: 1fr;
+    }
+
+    .offices {
+        margin: 40px 15px;
+    }
+}
